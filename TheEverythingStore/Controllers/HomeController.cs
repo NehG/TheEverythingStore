@@ -54,5 +54,11 @@ namespace TheEverythingStore.Controllers
             // load the view and pass the product list to it
             return View(products);
         }
+
+        public ActionResult ViewProduct(string ProductName)
+        {
+            ViewBag.ProductName = ProductName;
+            return View();
+        }
     }
 }
