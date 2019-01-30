@@ -1,0 +1,15 @@
+﻿@model IEnumerable<TheEverythingStore.Models.Product>;
+
+@{
+    ViewBag.Title = "Product";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.Title.</h2>
+
+<ul>
+    @foreach (var p in ViewBag.Products)
+    {
+        <li>@p</li>
+    }
+</ul>
