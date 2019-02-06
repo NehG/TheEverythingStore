@@ -42,6 +42,7 @@ namespace TheEverythingStore.Controllers
             // pass mock products to the view for display
             ViewBag.Products = products; */
 
+            /*
             var products = new List<Product>();
 
             for (int i = 1; i <= 10; i++)
@@ -50,6 +51,9 @@ namespace TheEverythingStore.Controllers
                 product.Name = "Product " + i.ToString();
                 products.Add(product);
             }
+            */
+
+            var products = ModelBinderAt
 
             // load the view and pass the product list to it
             return View(products);
